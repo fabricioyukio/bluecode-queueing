@@ -14,9 +14,9 @@ class CrawUrlJob < ApplicationJob
   end
 
   def check_url
-    urls_in = crawl
+    urls_in_page = crawl
     
-    urls_in.each do |url|
+    urls_in_page.each do |url|
       check_url = Url.find_or_create_by(url: url)
       check_url.status = "pending"
       if check_url.valid?
