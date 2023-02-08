@@ -1,5 +1,4 @@
 class CrawUrlJob < ApplicationJob
-  include HTTParty
   require "Mechanize"
 
   queue_as :default
