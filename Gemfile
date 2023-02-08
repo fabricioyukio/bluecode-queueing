@@ -43,6 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem "httparty"
+gem "mechanize"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -54,6 +55,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', ">= 3.9.0"
+  gem 'pry-rails'
 end
 
 group :development do
